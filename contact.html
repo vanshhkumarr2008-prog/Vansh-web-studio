@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VANSH WEB STUDIO</title>
+    <meta name="description" content="Get in touch with Vansh Web Studio for your next web project. Contact us via WhatsApp or Email.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body class="dark">
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <span>VANSH WEB STUDIO</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="https://wa.me/919877566380" target="_blank" class="btn btn-primary">WhatsApp Us</a>
+            </div>
+            <button id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container text-center">
+            <h1>Get In <span class="text-gradient">Touch</span></h1>
+            <p>Ready to start your next web project? We're here to help.</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="contact-info">
+                    <div class="card info-card">
+                        <h3>Contact Details</h3>
+                        <p>Feel free to reach out directly through any of these platforms:</p>
+                        <ul class="contact-list">
+                            <li>
+                                <strong>WhatsApp:</strong>
+                                <a href="https://wa.me/919877566380" target="_blank">98775 66380</a>
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                <a href="mailto:vansh.kumarr2008@gmail.com">vansh.kumarr2008@gmail.com</a>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://wa.me/919877566380" target="_blank" class="btn btn-primary lg w-full">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="card form-card">
+                        <h3>Send a Message</h3>
+                        <form id="static-contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help?" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                        </form>
+                        <div id="form-success" class="hidden text-green-500 mt-4 text-center">
+                            Message sent successfully! We'll get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo">
+                        <span>VANSH WEB STUDIO</span>
+                    </div>
+                    <p>Building high-performance digital experiences for modern businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>WhatsApp: +91 98775 66380</p>
+                    <p>Email: vansh.kumarr2008@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vansh Web Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
