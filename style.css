@@ -357,9 +357,10 @@ body.light {
     --text-muted: #475569;
     --accent: #2563eb;
 }
-/* FIX email overflow on mobile */
+/* FIX email overflow on mobile (FINAL) */
 .contact-btn {
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
@@ -367,7 +368,10 @@ body.light {
 
 .contact-btn span {
     display: block;
-    word-break: break-all;
-    overflow-wrap: break-word;
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: anywhere;
     white-space: normal;
 }
