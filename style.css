@@ -86,6 +86,22 @@ nav {
 .nav-links a:hover {
     color: var(--primary);
 }
+/* Dark / Light mode button */
+.nav-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--card-border);
+    color: var(--fg);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
 
 /* Hero */
 .hero {
@@ -325,4 +341,19 @@ footer {
     .section-title {
         font-size: 2rem;
     }
+}
+/* =========================
+   LIGHT MODE THEME
+   ========================= */
+body.light {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --card-bg: #f1f5f9;
+    --card-border: #cbd5e1;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary: #e2e8f0;
+    --secondary-hover: #cbd5e1;
+    --text-muted: #475569;
+    --accent: #2563eb;
 }
