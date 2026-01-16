@@ -357,3 +357,17 @@ body.light {
     --text-muted: #475569;
     --accent: #2563eb;
 }
+/* FIX email overflow on mobile */
+.contact-btn {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact-btn span {
+    display: block;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
