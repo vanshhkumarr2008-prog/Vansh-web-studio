@@ -3,121 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VANSH WEB STUDIO - Modern Websites for Your Business</title>
-    <meta name="description" content="We build professional, high-performance websites that help your business grow. SEO-optimized, mobile-friendly, and Google-ready.">
+    <title>Vansh Web Studio | Professional Web Development</title>
+    <meta name="description" content="Professional web studio creating modern, high-performance websites. SEO-optimized, mobile-responsive, and ready to grow your business.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
-<body class="dark">
-    <nav id="navbar">
-        <div class="container">
+<body>
+    <nav>
+        <div class="container nav-wrapper">
             <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Logo">
+                <img src="assets/logo.png" alt="Vansh Web Studio Logo">
                 <span>VANSH WEB STUDIO</span>
             </a>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <button id="theme-toggle" aria-label="Toggle Theme">
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </button>
-                <a href="https://wa.me/919877566380" target="_blank" class="btn btn-primary">WhatsApp Us</a>
-            </div>
-            <button id="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>We Build Modern Websites That <span class="text-gradient">Grow Your Business</span></h1>
-                <p>Expert web development studio focused on creating premium, high-performance digital experiences.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>We Build Modern Websites That <span class="accent-text">Grow Your Business</span></h1>
+                <p>Premium web development services focused on high performance, modern design, and measurable results.</p>
                 <div class="hero-btns">
-                    <a href="services.html" class="btn btn-primary lg">Get Website</a>
-                    <a href="https://wa.me/919877566380" target="_blank" class="btn btn-outline lg">Contact on WhatsApp</a>
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="https://wa.me/919877566380" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section class="intro">
-        <div class="container text-center">
-            <h2 class="section-title">Who is Vansh Web Studio?</h2>
-            <p class="section-desc">Vansh Web Studio is your dedicated partner for modern web solutions. We combine creativity with cutting-edge technology to build websites that aren't just beautiful, but are engineered for success.</p>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <div class="grid grid-3">
-                <div class="card feature-card">
-                    <div class="icon">⚡</div>
-                    <h3>Fast Performance</h3>
-                    <p>Optimized for speed and performance to ensure the best user experience.</p>
-                </div>
-                <div class="card feature-card">
-                    <div class="icon">💰</div>
-                    <h3>Affordable Pricing</h3>
-                    <p>Premium quality website services at prices that fit your budget.</p>
-                </div>
-                <div class="card feature-card">
-                    <div class="icon">🏆</div>
-                    <h3>Professional Quality</h3>
-                    <p>Top-tier design and development standards for every single project.</p>
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Professional Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">🌐</div>
+                        <h3>Business Website</h3>
+                        <p>Complete multi-page professional website for companies and agencies.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">👤</div>
+                        <h3>Portfolio Website</h3>
+                        <p>Showcase your professional work with a stunning personal portfolio.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🚀</div>
+                        <h3>Landing Page</h3>
+                        <p>High-converting single pages designed for your marketing campaigns.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="tech">
-        <div class="container text-center">
-            <h2 class="section-title">Technologies We Use</h2>
-            <div class="tech-grid">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>AI Tools</span>
-                <span>Responsive Design</span>
-                <span>SEO Optimized</span>
+        <section id="about" class="about">
+            <div class="container about-wrapper">
+                <div class="about-text">
+                    <h2 class="section-title">About Vansh Web Studio</h2>
+                    <p>At Vansh Web Studio, we specialize in delivering cutting-edge digital experiences. Our team is dedicated to building websites that are not only visually appealing but also technically superior, ensuring fast load times and excellent user engagement.</p>
+                    <ul class="about-list">
+                        <li>⚡ Fast & High-Performance</li>
+                        <li>📱 100% Mobile Responsive</li>
+                        <li>🔍 SEO & Google Ready</li>
+                        <li>💎 Premium Agency Design</li>
+                    </ul>
+                </div>
             </div>
-            <p class="future-note mt-8 text-muted">SEO-Friendly • Mobile Ready • Google Search Optimized</p>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's start your project</h3>
+                        <p>Ready to build something amazing? Reach out through any of the channels below.</p>
+                        <div class="contact-links">
+                            <a href="https://wa.me/919877566380" target="_blank" class="contact-btn whatsapp">
+                                <span>WhatsApp: +91 98775 66380</span>
+                            </a>
+                            <a href="mailto:vansh.kumarr2008@gmail.com" class="contact-btn email">
+                                <span>Email: vansh.kumarr2008@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="logo">
-                        <img src="assets/logo.png" alt="Logo">
-                        <span>VANSH WEB STUDIO</span>
-                    </div>
-                    <p>Building high-performance digital experiences for modern businesses.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>WhatsApp: +91 98775 66380</p>
-                    <p>Email: vansh.kumarr2008@gmail.com</p>
-                </div>
+        <div class="container footer-wrapper">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Logo">
+                <span>VANSH WEB STUDIO</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Vansh Web Studio. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 Vansh Web Studio. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
