@@ -1,107 +1,112 @@
-/* Core Color Variables */
-:root {
-    --bg: #0f172a;
-    --fg: #ffffff;
-    --primary: #3b82f6;
-    --primary-hover: #2563eb;
-    --accent: #60a5fa;
-    --card-bg: #1e293b;
-    --card-border: #334155;
-}
 
-/* Portfolio & Pricing Styles */
-.portfolio-grid, .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.portfolio-item {
-    background: var(--card-bg);
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid var(--card-border);
-    transition: 0.3s;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary);
-}
-
-.work-img {
-    height: 200px;
-    background: #0f172a;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: var(--primary);
-    margin-bottom: 15px;
-}
-
-.price-card {
-    background: var(--card-bg);
-    padding: 40px;
+background: var(--card-bg);
+    padding: 60px;
     border-radius: 24px;
-    text-align: center;
     border: 1px solid var(--card-border);
-    position: relative;
 }
-
-.price-card.featured {
-    border: 2px solid var(--primary);
-    transform: scale(1.05);
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 16px;
 }
-
-.price {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 20px 0;
-    color: var(--primary);
+.contact-info p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
 }
-
-.price-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
-    text-align: left;
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-
-.price-card ul li {
-    margin-bottom: 10px;
+.contact-btn {
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s;
+    border: 1px solid var(--card-border);
+}
+.whatsapp {
+    background: #10b981;
+    color: white;
+}
+.whatsapp:hover {
+    background: #059669;
+}
+.email {
+    background: var(--secondary);
+    color: var(--fg);
+}
+.email:hover {
+    background: var(--secondary-hover);
+}
+/* Footer */
+footer {
+    padding: 60px 0;
+    border-top: 1px solid var(--card-border);
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.footer-brand {
     display: flex;
     align-items: center;
+    gap: 12px;
+    font-weight: 800;
 }
-
-.price-card ul li::before {
-    content: "✓";
-    color: var(--primary);
-    margin-right: 10px;
-    font-weight: bold;
+.footer-brand img {
+    height: 32px;
 }
-
-.pop {
-    background: var(--primary);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.badge {
-    background: rgba(59, 130, 246, 0.1);
-    color: var(--primary);
-    padding: 8px 16px;
-    border-radius: 30px;
-    display: inline-block;
-    margin-bottom: 20px;
+.footer-wrapper p {
+    color: var(--text-muted);
     font-size: 0.9rem;
-    border: 1px solid var(--primary);
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero-btns {
+        flex-direction: column;
+    }
+    .nav-links {
+        display: none;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/* =========================
+   LIGHT MODE THEME
+   ========================= */
+body.light {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --card-bg: #f1f5f9;
+    --card-border: #cbd5e1;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary: #e2e8f0;
+    --secondary-hover: #cbd5e1;
+    --text-muted: #475569;
+    --accent: #2563eb;
+}
+/* FIX email overflow on mobile (FINAL) */
+.contact-btn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.contact-btn span {
+    display: block;
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
