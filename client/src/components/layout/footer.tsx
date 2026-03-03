@@ -17,6 +17,16 @@ export function Footer() {
             <p className="text-blue-100 max-w-sm">
               We specialize in crafting high-converting websites that empower local businesses to achieve sustainable growth and scale online.
             </p>
+            <div className="text-blue-100 space-y-2">
+              <p className="flex items-center gap-2">
+                <span className="font-semibold">Email:</span> 
+                <a href="mailto:contact.vanshwebstudio@gmail.com" className="hover:text-white transition-colors">contact.vanshwebstudio@gmail.com</a>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="font-semibold">Phone/WA:</span> 
+                <a href="tel:+919877566380" className="hover:text-white transition-colors">+91-9877566380</a>
+              </p>
+            </div>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#0f4ab0] transition-colors">
                 <Linkedin className="w-5 h-5" />

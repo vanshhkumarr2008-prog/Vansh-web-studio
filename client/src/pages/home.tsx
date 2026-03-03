@@ -340,8 +340,8 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">Email Us</div>
-                    <a href="mailto:hello@vanshwebstudio.com" className="text-xl font-bold hover:text-primary transition-colors">
-                      hello@vanshwebstudio.com
+                    <a href="mailto:contact.vanshwebstudio@gmail.com" className="text-xl font-bold hover:text-primary transition-colors">
+                      contact.vanshwebstudio@gmail.com
                     </a>
                   </div>
                 </div>
@@ -350,9 +350,9 @@ export default function Home() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="text-sm text-muted-foreground mb-1">Call Us</div>
-                    <a href="tel:+15551234567" className="text-xl font-bold hover:text-primary transition-colors">
-                      +1 (555) 123-4567
+                    <div className="text-sm text-muted-foreground mb-1">Call / WhatsApp</div>
+                    <a href="tel:+919877566380" className="text-xl font-bold hover:text-primary transition-colors">
+                      +91-9877566380
                     </a>
                   </div>
                 </div>
